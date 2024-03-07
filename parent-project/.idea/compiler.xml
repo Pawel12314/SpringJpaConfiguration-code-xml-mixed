@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <excludeFromCompile>
+      <directory url="file://$PROJECT_DIR$/Api/src/main/resources/archetype-resources" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/Server/src/main/resources/archetype-resources" includeSubdirectories="true" />
+    </excludeFromCompile>
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="Server" />
+        <module name="Api" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Api-backend" target="1.8" />
+      <module name="Api-frontend" target="1.8" />
+      <module name="demo" target="17" />
+      <module name="parent-project-backend" target="1.8" />
+      <module name="parent-project-frontend" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Api" options="-parameters" />
+      <module name="Api-backend" options="-parameters" />
+      <module name="Api-frontend" options="-parameters" />
+      <module name="Server" options="-parameters" />
+      <module name="demo" options="-parameters" />
+      <module name="parent-project-backend" options="-parameters" />
+      <module name="parent-project-frontend" options="-parameters" />
+    </option>
+  </component>
+</project>
